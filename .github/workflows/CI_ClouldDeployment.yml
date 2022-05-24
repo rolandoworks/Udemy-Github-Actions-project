@@ -64,3 +64,9 @@ jobs:
       - name: Save DigitalOcean kubeconfig (short-lived credentials)
         run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 k8s-git-actions-deployment
 
+      - name: Deploy to DigitalOcean Kubernetes
+        run: kubectl apply -f $GITHUB_WORKSPACE/pod.yml
+
+      - name: Verify Deployment
+        run: kubectl describe pods demo-kotlinapp
+
