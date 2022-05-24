@@ -51,4 +51,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: rdiaz07/demo-kotlin2.0
+          tags: ${{ secrets.DOCKER_USER }}/demo-kotlin2.0
