@@ -1,7 +1,7 @@
-# Final project: Github-Actions-project Hands-On DevOps #
+## Final project: Github Actions Hands-On DevOps ##
 The Course was an introduction to Github Actions.
 
-# Motivation: #
+## Motivation: ##
 This repo contains a pipeline yml file ([.github/workflows/CI_CloudDeployment.yaml](https://github.com/rolandoworks/Udemy-Github-Actions-project/blob/main/.github/workflows/CI_ClouldDeployment.yml)) to compile, dockerize and deploy a kotlin application into a Kubernetes cluster on DigitalOcean.
 
 ## Pre-requisites summary##
