@@ -52,3 +52,11 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USER }}/demo-kotlin2.0
+
+      - name: Install DigitalOCean doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Access DigitalOcean Container Registry (short-lived credentials)
+        run: doctl registry login --expiry-seconds 600
