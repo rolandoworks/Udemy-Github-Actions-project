@@ -4,7 +4,7 @@ The Course was an introduction to Github Actions.
 ## Motivation: ##
 This repo contains a pipeline yml file ([.github/workflows/CI_CloudDeployment.yaml](https://github.com/rolandoworks/Udemy-Github-Actions-project/blob/main/.github/workflows/CI_ClouldDeployment.yml)) to compile, dockerize and deploy a kotlin application into a Kubernetes cluster on DigitalOcean.
 
-## Pre-requisites summary##
+## Pre-requisites summary ##
 1) The first task is to check the java and docker versions.
 ```
     run: |
@@ -12,7 +12,7 @@ This repo contains a pipeline yml file ([.github/workflows/CI_CloudDeployment.ya
     docker --version
 ```
 
-## Deployment lifecycle summary##
+## Deployment lifecycle summary ##
 1) Build the Kotlin app using Gradle.
 ```
     uses: docker/build-push-action@v2
