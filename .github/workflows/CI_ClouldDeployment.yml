@@ -60,3 +60,7 @@ jobs:
 
       - name: Access DigitalOcean Container Registry (short-lived credentials)
         run: doctl registry login --expiry-seconds 600
+
+      - name: Save DigitalOcean kubeconfig (short-lived credentials)
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 k8s-git-actions-deployment
+
